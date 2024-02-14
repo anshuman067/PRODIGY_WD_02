@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="watch2.css">
+    <title>Stopwatch App</title>
+</head>
+<body>
+    <section class="WE">
+        <p>INTRODUCING TO THE STOP WATCH APPLICATION</p>
+        <P class="WATCH">HERE YOU CAN FIND YOUR TIME FLEXIBILITY </P>
+    </section>
+    <div class="stopwatch-container">
+        <div class="display">
+            <span id="display">00:00:00</span>
+        </div>
+        <div class="controls">
+            <button id="startBtn" onclick="startStopwatch()">Start</button>
+            <button id="pauseBtn" onclick="pauseStopwatch()" disabled>Pause</button>
+            <button id="resetBtn" onclick="resetStopwatch()" disabled>Reset</button>
+            <button id="lapBtn" onclick="recordLap()" disabled>Lap</button>
+        </div>
+        
+        <ul id="laps" class="laps-list"></ul>
+    </div>
+
+    <div class="ll">
+        <p><em>current laps:</em></p>
+    </div>
+    <script src="watch3.js"></script>
+</body>
+</html>
